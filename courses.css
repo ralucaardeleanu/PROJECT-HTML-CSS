@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+:root {
+  /* COLORS */
+  --background-color: rgb(20, 30, 76);
+  --background-secondary: #dfedf5;
+  --background-dark: #101d42;
+  --background-light: #ffffff;
+  --text-primary: #101d42;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --text-light: #eaeaea;
+  --text-white: #ffffff;
+  --button-color: #2bb686;
+  /* FONT-SIZE */
+  --fontsize-small: 0.75rem;
+  --fontsize-medium: 0.875rem;
+  --fontsize-large: 1rem;
+  /* SPACING */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.75rem;
+  --spacing-tiny: 0.25rem;
+  --spacing-extra-large: 2.625rem;
+}
+.dimension {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+}
+.container {
+  min-height: 100vh;
+}
+
+.section-two-container {
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+
+/* MAIN */
+i {
+  margin-right: 4px;
+}
+/* section one */
+
+.section-one {
+  background-color: var(--background-color);
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one h1 {
+  color: var(--text-white);
+  font-size: 3.5rem;
+}
+
+/* section two */
+
+.section-two {
+  background-color: var(--background-light);
+  margin-bottom: var(--spacing-large);
+}
+.section-two h2 {
+  font-size: var(--fontsize-large);
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  margin-left: var(--spacing-medium);
+  margin-right: var(--spacing-medium);
+}
+.section-two .content-info {
+  font-size: var(--fontsize-medium);
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  margin-left: var(--spacing-medium);
+  margin-right: var(--spacing-medium);
+}
+.section-two h2 {
+  font-size: 1.75rem;
+  margin-top: var(--spacing-medium);
+}
+
+.section-two .course-wrapper {
+  padding-right: var(--spacing-small);
+  padding-left: var(--spacing-small);
+}
+.section-two .microsoft-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  padding-left: var(--spacing-small);
+}
+
+.section-two .certification {
+  margin-left: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
+  font-size: var(--fontsize-medium);
+  color: #666;
+}
+.section-two .courses-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.section-two .course {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-medium);
+}
+
+.section-two .course-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-large);
+}
+
+.section-two h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  padding-left: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
+}
+
+.section-two .details {
+  padding-left: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
+  font-size: var(--fontsize-medium);
+  color: #666;
+}
+.section-two a {
+  display: block;
+  background-color: var(--button-color);
+  color: var(--text-white);
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-medium);
+  width: 100px;
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  text-align: center;
+  margin-left: var(--spacing-medium);
+  font-size: var(--fontsize-medium);
+}
+
+span {
+  padding-right: var(--spacing-small);
+}
+/* section two */
+
+.section-three {
+  background-color: var(--background-secondary);
+}
+
+.section-three-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-three h2 {
+  font-size: 1.8rem;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  color: var(--text-primary);
+}
+
+.section-three p {
+  font-size: var(--fontsize-large);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-medium);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: fit-content;
+  }
+
+  .section-two .courses-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .section-two-container h2 {
+    font-size: 2.5rem;
+    margin-top: var(--spacing-large);
+  }
+
+  .section-two-container .content-info {
+    font-size: 1.3rem;
+    margin-right: var(--spacing-large);
+    margin-left: var(--spacing-large);
+  }
+
+  .section-three iframe {
+    width: 700px;
+    height: 350px;
+  }
+}
